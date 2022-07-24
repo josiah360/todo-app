@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { Fragment } from 'react';
+
+import Goals from './components/Goals/Goals';
 import './App.css';
 
+const goals = [
+  {title: 'Master react', id: 'g1'},
+  {title: 'Master nodejs', id: 'g2'},
+  {title: 'Get a great job', id: 'g3'},
+  {title: 'Build a house', id: 'g4'},
+]
+
 function App() {
+
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className='main'>
+        <Goals goals={goals} />
+      </div>
+    </Fragment>
   );
 }
 
